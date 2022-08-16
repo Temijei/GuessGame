@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="script.js"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -13,14 +12,19 @@
         <h1>Number Guessing Game</h1>
         <h3>Guess a number between 1-15.</h3>
         <form>
-            <label for="guess"></label><br>
-            <input type="text" id="guess"><br>
-            <input type="submit" id="submitGuess" value="Guess">
+            <label ></label><br>
+            <input type="text" id="guess" class="guess" placeholder="Enter your  guess "><br>
+    
+            <p class="user-score">
+                    10
+            </p>
           </form>
         
           <p id="feedback"></p>
         
-          <button id="submitGuess" onclick="submitGuess()">GUESS</button> <br>
+          <button id="submitGuess" onclick="checkGuess()">GUESS</button> <br>
     </div>
+    <!-- Javascript link tag always at the bottom of the page  -->
+    <script src="./index.js"></script>
 </body>
 </html>
